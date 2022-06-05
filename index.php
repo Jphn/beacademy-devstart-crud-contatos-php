@@ -11,7 +11,7 @@
 		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bg-light">
 	<header>
 		<?php
 
@@ -25,12 +25,11 @@ include './views/menu.php';
 
 $url = explode( '?', $_SERVER['REQUEST_URI'] );
 
-include './acoes.php';
+include './routes.php';
 
 match( $url[0] ) {
     '/' => homePage(),
-    '/signin' => signInPage(),
-    '/signup' => signUpPage(),
+    '/create' => createPage(),
     '/list' => listPage(),
     '/delete' => deletePage(),
     '/update' => updatePage(),

@@ -9,7 +9,7 @@
 			<label for="exampleInputName1" class="form-label">Name</label>
 			<input type="text" name="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp"
 				required>
-			<div id="nameHelp" class="form-text">Type your full name.</div>
+			<div id="nameHelp" class="form-text">Type his full name.</div>
 		</div>
 		<div class="mb-3">
 			<label for="exampleInputEmail1" class="form-label">Email</label>
